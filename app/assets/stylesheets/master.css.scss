@@ -1,0 +1,25 @@
+body {
+	background-image: url("/assets/stardust.png");
+}
+
+.grabber-box {
+	color: orange;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: '3dumbregular', Helvetica, sans-serif;
+}
+
+h2 {
+	font-family: '2dumbregular', Helvetica, sans-serif;
+}
+
+.grabber-box h1 {
+	font-size: 400%; 
+}
+

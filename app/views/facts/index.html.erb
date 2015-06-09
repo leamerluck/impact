@@ -1,0 +1,7 @@
+<% @facts.each do |fact| %>
+	<div class="truth-box col-xs-12 col-sm-6">
+		<h3>Myth:</h3><p><%= fact.myth %></p>
+		<h3>Truth:</h3><p><%= fact.truth %></p>
+	</div>
+	<hr/>
+<% end %>

@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def home
-
+  	@facts = Fact.all
   end
 
   def about

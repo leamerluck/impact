@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Add Bootstrap for responsiveness
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# Simple form 
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

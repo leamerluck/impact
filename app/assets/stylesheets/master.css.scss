@@ -32,6 +32,129 @@ h2 {
 	-webkit-box-shadow: 5px 5px 5px gray;
 	box-shadow: 5px 5px 5px gray;
 	height: 300px;
-	
+	font-family: '2dumbregular', Helvetica, sans-serif;
+
 }
 
+.student-box {
+	color: white;
+	border-radius: 10px;
+	border: 1px solid orange;
+	padding: 20px;
+	-moz-box-shadow: 5px 5px 5px gray;
+	-webkit-box-shadow: 5px 5px 5px gray;
+	box-shadow: 5px 5px 5px gray;
+	height: auto;
+	font-family: '2dumbregular', Helvetica, sans-serif;
+	color: orange;
+	margin: 20px;
+}
+
+.student-box h1 {
+	text-align: center;
+	color: white;
+}
+
+.clear {
+	clear: both;
+}
+
+.ripple {
+  display:block;
+  position:absolute;
+  top: 10%;
+  left: 5%;
+  margin: 0;
+  width:25px;
+	z-index: 1001px;
+}
+
+.ripple h3 {
+	position: absolute;
+	color: orange;
+	font-family: '3dumbregular', Helvetica, sans-serif;
+	z-index: 1050;
+	margin: 0;
+	top: 5px;
+}
+
+.ripple,.ripple:before,.ripple:after {
+  display:block;
+  border-radius:10px;
+  width:2px;
+  height:2px;
+  -webkit-animation:rip 6s infinite;
+  -moz-animation:rip 6s infinite;
+}
+/*.ripple {
+  position:absolute;
+  z-index: 0;
+  top:2px;
+  left:2px;
+}*/
+
+.ripple:before,.ripple:after {
+  content:'';
+  position:absolute;
+}
+.ripple:before {-webkit-animation-delay:.2s;-moz-animation-delay:.2s;top:10px;left:25px;}
+.ripple:after {-webkit-animation-delay:.8s;-moz-animation-delay:.8s;top:40px;left:0;}
+@-webkit-keyframes rip 
+{
+  0%  {
+    box-shadow:0 0 0 0 transparent,
+               0 0 0 0 transparent,
+               0 0 0 0 transparent,
+               0 0 0 0 transparent;
+  }
+  5%  {
+    box-shadow:0 0 0 0 #736E72,
+               0 0 0 0 rgba(255,255,255,0.4),
+               0 0 0 0 #736E72,
+               0 0 0 0 rgba(0,0,0,0.08);
+  }
+  100% {
+    box-shadow:0 0 5px 20px #736E72,
+               0 0 8px 25px transparent,
+               0 0 10px 30px #736E72,
+               0 0 5px 35px transparent;
+  }
+}
+@-moz-keyframes rip 
+{
+  0%  {
+    box-shadow:0 0 0 0 transparent,
+               0 0 0 0 transparent,
+               0 0 0 0 transparent,
+               0 0 0 0 transparent;
+  }
+  5%  {
+    box-shadow:0 0 0 0 #736E72,
+               0 0 0 0 rgba(255,255,255,0.4),
+               0 0 0 0 #736E72,
+               0 0 0 0 rgba(0,0,0,0.08);
+  }
+  100% {
+    box-shadow:0 0 5px 20px #736E72,
+               0 0 8px 25px transparent,
+               0 0 10px 30px #736E72,
+               0 0 5px 35px transparent;
+  }
+}
+
+.text, .string, .integer {
+	color: orange;
+	font-family: '2dumbregular', Helvetica, sans-serif;
+
+}
+
+.simple_form.new_achievement {
+	width: 75%;
+	height: auto;
+	margin: auto;
+}
+
+.simple_form .btn {
+	background-color: orange;
+	border-color: black;
+}

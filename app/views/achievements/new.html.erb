@@ -1,0 +1,6 @@
+<%= simple_form_for @achievement do |t| %>
+	<%= t.input :accomplishment, label: 'Tell us something awesome you\'ve accomplished!' %>
+	<%= t.input :name, label: 'Nickname' %>
+	<%= t.input :grade, label: 'Tell us your grade level' %>
+	<%= t.submit 'Share', :class => 'btn btn-primary' %>
+<% end %>

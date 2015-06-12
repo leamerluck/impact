@@ -1,7 +1,22 @@
+<div class="grabber-box col-xs-12">
+		<h1>IMPACT</h1>
+		<h2>Giving homeschoolers the confidence to know they can make a big impact in the world!</h2>
+</div>
+	<div class="clear"></div>
+<div class="student-box" col-xs-12>
+	<h1>Real Homeschool Student Accomplishments</h1>
+	<hr/>
+	<% @achievements.each do |achievement| %>
+			<p>~ <%= achievement.accomplishment %></p>
+			<h5><%= achievement.name %></h5>
+			<h5>Grade: <%= achievement.grade %></h5>
+			<hr/>
+	<% end %>
+</div>
+		<div class="clear"></div>
 <% @facts.each do |fact| %>
 	<div class="truth-box col-xs-12 col-sm-6">
 		<h3>Myth:</h3><p><%= fact.myth %></p>
 		<h3>Truth:</h3><p><%= fact.truth %></p>
 	</div>
-	<hr/>
 <% end %>
